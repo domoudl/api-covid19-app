@@ -7,7 +7,7 @@ CREATE TABLE LieuMedical (
                              contact varchar(255),
                              latitude double precision,
                              longitude double precision,
-                             type varchar(255)
+                             type TINYINT
 );
 
 CREATE TABLE RendezVous (
@@ -29,7 +29,7 @@ CREATE TABLE Patient (
 CREATE TABLE Disponibilite (
                                id INT AUTO_INCREMENT PRIMARY KEY,
                                structure_medical_id int,
-                               date date,
+                               dateDisponibilite date,
                                doses_vaccin_disponibles varchar(255),
                                tests_disponibles varchar(255)
 );
